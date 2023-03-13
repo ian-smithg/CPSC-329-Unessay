@@ -1,0 +1,71 @@
+
+
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #00FF00;
+    margin-bottom: 0px;
+}
+
+.main {
+    background-color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+.desc {
+    font-family: monospace;
+    color: #00FF00;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.para1 {
+    font-family: monospace;
+    color: #00FF00;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.puzzleLink {
+    text-decoration: none;
+    font-family: monospace;
+    background-color: #00FF00;
+}
+
+.linkBox{
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #00FF00;
+    color: black;
+}
+
+h6 {
+    color: #00FF00;
+    font-family: monospace;
+    font-size: 8px;
+    text-align: center;
+    margin: 3px;
+}
+
+
+
+hr {
+    background-color: #00FF00;
+    color: #00FF00;
+    border-color: #00FF00;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
