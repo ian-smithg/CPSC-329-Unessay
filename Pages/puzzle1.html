@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Puzzle 1</title>
+        <meta chatset=  'UTF-8'>
+        <link rel="stylesheet" href="puzzle1.css">
+
+    </head>
+
+    <body>
+
+        <div class="bg">
+            <h1>
+                <img src="image2.png" alt="Logo" width="25" height="25">
+                Rode Research
+            </h1>
+
+            <div class="blurb">
+                To request data, type the term you are looking for into the search bar and the results will be returned below. On return the table will display all matching names to the search term along with the employee ids and personal emails. This is meant for internal use only, if you have ended up here please turn back.
+            </div>
+        
+        
+
+
+        <div class="search">
+            <h2>Database Query</h2>
+            <form class="search-box" id="search-form">
+                <label for="search"></label>
+                <input type="text" id="search" name="search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        
+        <div class="results">
+            <table id="search-results">
+                <thread>
+                    <tr>
+                        <th>Name</th>
+                        <th>Identification</th>
+                        <th>Email</th>
+                    </tr>
+                </thread>
+                <tbody id="table-body">
+
+                </tbody>    
+            </table>
+        </div>
+
+
+
+
+
+
+
+            <hr>
+
+            <div>
+                <h6>Rode Research</h6>
+                <h6>Ian Smith: 30133271</h6>
+            </div>
+        <script src="puzzle1.js"></script>
+        </div>   
+
+    </body>
+</html>
