@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Log In</title>
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+	<style>
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #000000;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+		  display: block;
+		  color: #00FF00;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		li a:hover {
+			color: #000000;
+			background-color: #00FF00;
+		}
+		
+		.active {
+			color: #000000;
+			background-color: #00FF00;
+		}
+		
+		a:link {
+		color: #00FF00;
+		text-decoration: none;
+		}
+		
+		a:visited {
+		color: #00FF00;
+		}
+		
+		body {font-family: Arial, Helvetica, sans-serif;}
+		form {border: 3px solid #00FF00;}
+
+		input[type=text], input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #00FF00;
+		box-sizing: border-box;
+		color: #00FF00;
+		background-color: #000000;
+		border-color: #00FF00;
+		outline: #00FF00;
+		}
+		
+		input::placeholder {
+			color: #00FF00;
+			}
+
+		button {
+		background-color: #00FF00;
+		color: #000000;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		}
+
+		button:hover {
+		  opacity: 0.8;
+		}
+
+		.imgcontainer {
+		  text-align: center;
+		  margin: 24px 0 12px 0;
+		}
+
+		img.avatar {
+		  width: 40%;
+		  border-radius: 50%;
+		}
+
+		.container {
+		  padding: 16px;
+		}
+
+		span.psw {
+		  float: right;
+		  padding-top: 16px;
+		}
+	
+     </style>
+    </head>
+	
+	
+<body>
+
+    <div class = main > 
+    <!--This is how you comment in html-->
+	
+        <h1> Just An Ordinary Store For Store People </h1>
+		<ul>
+		  <li><a href="store.html">Store</a></li>
+		  <li><a href="about.html">About</a></li>
+		  <li style="float:right"><a class="active" href="login.html">Log In</a></li>
+		</ul>
+		
+        <hr>
+        <h2 class = desc>Log In</h2>
+		
+        <form action="validate.html" method="GET">
+		<div class = "container">
+		<div class="imgcontainer">
+		<label for="msg"><FONT COLOR ="#00FF00"><b>INCORRECT USERNAME OR PASSWORD<br>Reminder: Passwords must have 1 capital letter and 1 number.</b></font></label> </div>
+		<img src="image.png" alt="Avatar" class="avatar">
+		</div>
+
+		<div class="container">
+			<label for="uname"><FONT COLOR ="#00FF00"><b>Username</b></font></label>
+			<input type="text" placeholder="Enter Username" name="uname" required>
+
+			<label for="psw"><FONT COLOR ="#00FF00"><b>Password</b></font></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+	
+			<div class="container" style="background-color:#000000">
+			<span class="psw"><a href="#">Forgot password?</a></span>
+		</div>
+
+    <button type="submit" onclick="getInputValue();">Login</button>
+  </div>
+  
+  
+</form>
+
+        <hr>
+
+        <div>
+            <h6>Wow you can't even log in?</h6>
+
+        </div>
+
+    </div>
+   
+</body>
+</html>

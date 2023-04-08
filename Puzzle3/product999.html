@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Generic Store</title>
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+	<style>
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #000000;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+		  display: block;
+		  color: #00FF00;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		li a:hover {
+			color: #000000;
+			background-color: #00FF00;
+		}
+		
+		.active {
+			color: #000000;
+			background-color: #00FF00;
+		}
+		
+		a:link {
+		color: #00FF00;
+		text-decoration: none;
+		}
+		
+		input[type=number] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 4px 0;
+		display: inline-block;
+		border: 1px solid #00FF00;
+		width: 50px;
+		color: #00FF00;
+		background-color: #000000;
+		border-color: #00FF00;
+		outline: #00FF00;
+		}
+		
+		input::placeholder {
+			color: #00FF00;
+			}
+
+		button {
+		background-color: #00FF00;
+		color: #000000;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100px;
+		}
+		
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+		}
+		
+		input[type=number] {
+		-moz-appearance: textfield;
+		}
+
+     </style>
+    </head>
+	
+	
+<body>
+
+    <div class = main > 
+	
+        <h1> Just An Ordinary Store For Store People </h1>
+		<ul>
+		  <li><a class="active" href="userStore.html">Store</a></li>
+		  <li><a href="userAbout.html">About</a></li>
+		  <li style="float:right"><a href="items.html">Items</a></li>
+		</ul>
+		
+        <hr>
+        <h2 class = desc>Triguardium Series Bundle</h2>
+        <p class = para1>
+		Purchase the following items:<br>
+		-Triguardium: The Watery Water (A Short Story)<br>
+		-Triguardium: The Really Hot Fire (A Choose Your Own Adventure)<br>
+		-Triguardium: The InsertAdjectiveHere Earth (A Browser Game)<br>
+        </p>
+		
+		<label for="msg"><FONT COLOR ="#00FF00"><b><br>Purchase the "Triguardium Series Bundle"</b></font></label>
+		
+		<form action="verifyPurchase.html" method="GET">
+		<input type="number" id="amount" name="amount" min="1" max="1" required>
+		<label for="amount"><FONT COLOR ="#00FF00"><b>Amount<br></b></font></label>
+		<button type="submit" onclick="getInputValue();">Submit</button>
+		</form>
+		
+		<p>
+		<table style="width:100%; z-index:1; color:#00FF00;" border=1 bordercolor="#00FF00"> 
+			<th>User</th><th>Reviews</th>
+			 <tr>
+				 <td>KingOfEverything (Guest)</td><td>lololol this costs $999 who would buy this junk bundle</td>
+			 </tr>
+			 <tr>
+				<td>UnluckyGuy</td><td>@KingOfEverything<br>credit card system was down for the other products I had to :(</td>
+			</tr>
+			<tr>
+				<td>WelpHereItIs (Guest)</td><td>@UnluckyGuy<br>Credit card system is down for this bundle too welp</td>
+			</tr>
+			<tr>
+				<td>ValuedCustomer (Guest)</td><td>??? This is everything from this store, right?<br>What about that weird pdf file?</td>
+			</tr>
+			<tr>
+				<td>KingOfEverything (Guest)</td><td>@ValuedCustomer<br>What was the product code?</td>
+			<tr>
+			<tr>
+				<td>UnluckyGuy</td><td>@KingOfEverything<br>Oh I still have it! I think it's product514!</td>
+			</tr>
+			<tr>
+				<td>TrianglesAreReal (Guest)</td><td>@ValuedCustomer<br>Yeah using Unlucky's product code I think that they accidentally programmed that in haha, the file doesn't even open properly.</td>
+			</tr>
+			<tr>
+				<td>ValuedCustomer (Guest)</td><td>@TrianglesAreReal<br>Oh. Bummer :/</td>
+			</tr>
+		</table>
+		</p>
+
+        <hr>
+
+        <div>
+            <h6>It's like making a mistake, but multiplied by 3.</h6>
+        </div>
+
+    </div>
+
+
+
+
+
+
+   
+</body>
+</html>

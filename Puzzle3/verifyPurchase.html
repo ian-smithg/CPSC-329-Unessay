@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Generic Store ABOUT PAGE</title>
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+	<style>
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #000000;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+		  display: block;
+		  color: #00FF00;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		li a:hover {
+			color: #000000;
+			background-color: #00FF00;
+		}
+		
+		.active {
+			color: #000000;
+			background-color: #00FF00;
+		}
+		
+		a:link {
+		color: #00FF00;
+		text-decoration: none;
+		}
+		
+		button {
+		background-color: #00FF00;
+		color: #000000;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100px;
+		}
+		
+     </style>
+	 <script>
+		var url = new URL(window.location.href);
+		var amount = url.searchParams.get("amount");
+	</script>
+    </head>
+	
+<body>
+
+    <div class = main > 
+	
+        <h1> Just An Ordinary Store For Store People </h1>
+		<ul>
+		  <li><a href="userStore.html">Store</a></li>
+		  <li><a class="active" href="userAbout.html">About</a></li>
+		  <li style="float:right"><a href="items.html"><font color="#000000">Items</font></a></li>
+		</ul>
+		<hr>
+        <p><FONT COLOR ="#00FF00">
+		Are you sure you would like to purchase "Triguardium Series Bundle" for {amount}x<b>$999</b>?
+        </p></font>
+		
+		<form action="purchase.html" method="GET">
+		<input type="hidden" id="verifyAmount" name="verifyAmount" value='amount'>
+		<button type="submit" onclick="getInputValue();">Yes</button>
+		</form>
+
+        <hr>
+
+        <div>
+            <h6>Do it. I need the money to feed my 10 kids who don't exist.</h6>
+
+        </div>
+
+    </div>
+   
+</body>
+
+<script>
+	document.querySelector("[name='verifyAmount']").value = amount;
+</script>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	 <script>
+		var url = new URL(window.location.href);
+		var name = url.searchParams.get("uname");
+		var pass = url.searchParams.get("psw");
+		
+		if (name == "TGFan" && pass == "River3") {
+		location.href = "welcomeUser.html";
+		}
+		else if (name == "TGFan") {
+		location.href = "loginTGFan.html";
+		}
+		else {
+		location.href = "loginFailed.html";
+		}
+	</script>
+    </head>
+</html>

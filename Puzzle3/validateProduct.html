@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	 <script>
+		var url = new URL(window.location.href);
+		var pass = url.searchParams.get("pass");
+		
+		if (pass == "713") {
+		location.href = "allBundItemsValidated.html";
+		}
+		else {
+		location.href = "itemsFailed.html";
+		}
+	</script>
+    </head>
+</html>

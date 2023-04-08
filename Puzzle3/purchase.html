@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	 <script>
+		var url = new URL(window.location.href);
+		var amount = url.searchParams.get("verifyAmount");
+		
+		if (amount == "1") {
+		location.href = "creditCard.html";
+		}
+		else if (amount == "0") {
+		location.href = "purchaseBUndleSuccessfulPass.html";
+		}
+		else {
+		location.href = "uhOh.html";
+		}
+	</script>
+    </head>
+</html>
