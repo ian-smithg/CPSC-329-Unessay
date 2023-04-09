@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body style="background-color:Black;">
+
+
+<h1 style="color:Lime;">Account Hacker</h1>
+
+<p style="color:Lime;">Crack the passwords to the following accounts in order to obtain the secrect key to leave this page!</p>
+
+<p style="color:Lime;">Background Context: The following account credentials belong to an individual named Snow Hack, 
+who is very found of Chicago where they were born and rasied in. They live with their mother, Winter Code, 
+in Texas. Snow absolutely adores cats. They have three cats (of course!), two of which are of breed Maine 
+Coon and the other is a Ragdoll named Alpha, Beta, and Gamma respectively. Snow loves to eat cheese pizza 
+and ice cream, although they always have a hard time deciding which one of those is their ultimate favorite.
+</p>
+
+<p style="color:Lime;">The following are security questions Snow has set on her account in order to access their
+account if they ever forget their password. Answer these questions correctly in order to gain access to Snow's 
+account. 
+</p>
+
+<p style="color:Lime;">What is your mother's maiden name?
+</p>
+<form id=form1>
+	Answer: <input type="text" name="mname"><br>
+</form>
+
+<p style="color:Lime;">What city were you born in?
+</p>
+<form id=form2>
+	Answer: <input type="text" name="pname"><br>
+</form>
+
+<p style="color:Lime;">What is the name of your favorite pet?
+</p>
+<form id=form3>
+	Answer: <input type="text" name="cname"><br>
+</form>
+
+<br>
+<button onclick="myFunction()">Submit</button>
+
+<p style="color:Lime;", id="demo"></p>
+
+<script>
+function myFunction() {
+  var a = 0;
+  var x = document.getElementById("form1");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value;
+  }
+  if(text === "Code" || text === "code") {
+  	a = a + 1;
+  }
+  
+  var x1 = document.getElementById("form2");
+  var text1 = "";
+  var i1;
+  for (i1 = 0; i1 < x1.length ;i1++) {
+    text1 += x1.elements[i1].value;
+  }
+  if(text1 === "Chicago" || text1 === "chicago") {
+  	a = a + 1;
+  }
+  
+  var x2 = document.getElementById("form3");
+  var text2 = "";
+  var i2;
+  for (i2 = 0; i2 < x2.length ;i2++) {
+    text2 += x2.elements[i2].value;
+  }
+  if(text2 === "Beta" || text2 === "beta") {
+  	a = a + 1;
+  }
+  
+  if(a === 3) {
+  	document.getElementById("demo").innerHTML = "Correct!! :)";
+    document.getElementById("demo1").innerHTML = "That was too easy...let's see if you can hack into Snow's account by guessing her password! You already know her username, snowy, since it is public to everyone on the platform.";
+    document.getElementById("demo2").innerHTML = "Remember: All passwords are usually hashed and stored in a server for accounts. When the user enters a password, the hash of the input is taken and compared against the stored hash in the server for authentication.";
+ 	
+    var y = document.getElementById("form4");
+    y.style.display = "block";
+    y = document.getElementById("form5");
+    y.style.display = "block";
+    y = document.getElementById("upsubmit");
+    y.style.display = "block";
+    
+  } else {
+  	document.getElementById("demo").innerHTML = "Incorrect :(";
+  }
+  
+}
+</script>
+
+<br>
+<br>
+
+<p style="color:Lime;", id="demo1"></p>
+<p style="color:Lime;", id="demo2"></p>
+<!-- h(k) = k mod m
+https://www.cs.hmc.edu/~geoff/classes/hmc.cs070.200101/homework10/hashfuncs.html#:~:text=Simple%20hash%20functions&text=h(k)%20%3D%20k%20mod,than%20the%20raw%20division%20method.
+-->
+<form style="display:none" id=form4>
+	<label for="username" style="color:Lime;"> Username: </label> 
+	<input type="text" id="username" name="username"><br>
+</form>
+
+<form style="display:none" id=form5>
+    <label for="password" style="color:Lime;"> Password: </label>
+    <input type="text" id="password" name="password"><br>
+</form>
+
+<br>
+<button style="display:none" id="upsubmit" onclick="myFunction1()">Submit</button>
+
+<p style="color:Lime;", id="demo11"></p>
+<p style="color:Lime;", id="demo12"></p>
+<!-- <p style="color:Lime;", id="demo12"></p>
+<p style="color:Lime;", id="demo13"></p> -->
+
+<script>
+function myFunction1() {
+  var a = 0;
+  var x = document.getElementById("form4");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value;
+  }
+  
+  var x1 = document.getElementById("form5");
+  var text1 = "";
+  var i1;
+  for (i1 = 0; i1 < x1.length ;i1++) {
+    text1 += x1.elements[i1].value;
+  }
+  var text_int = 0;
+  for (i1 = 0; i1 < text1.length ;i1++) {
+  	text_int += text1.charCodeAt(i1);
+  }
+  
+  var stored_password = "code123"
+  var text_int1 = 0;
+  for (i1 = 0; i1 < stored_password.length ;i1++) {
+  	text_int1 += stored_password.charCodeAt(i1);
+  }
+  
+  if(((text_int % 10) === (text_int1 % 10)) && (text === "snowy")) {
+  	document.getElementById("demo11").innerHTML = "Congratulations! You now have access to Snow's account. :)";
+    document.getElementById("demo12").innerHTML = "Click on the button below to return back to the home page.";
+    var y = document.getElementById("returnhp");
+    y.style.display = "block";
+  } else {
+  	document.getElementById("demo11").innerHTML = "Incorrect, try again! :(";
+  }
+  /*document.getElementById("demo12").innerHTML = text_int;
+  document.getElementById("demo13").innerHTML = text_int1;*/
+  
+}
+</script>
+
+<button style="display:none" id="returnhp" onclick="myFunction2()">Return to Home Page</button>
+
+<script>
+function myFunction2() {
+  //add code to link home page
+}
+</script>
+
+<!--
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
+https://www.programiz.com/javascript/examples/ascii-value-character#:~:text=In%20the%20above%20program%2C%20the,index%20value%20will%20be%200.
+https://css-tricks.com/html-inputs-and-labels-a-love-story/
+https://css-tricks.com/html-inputs-and-labels-a-love-story/
+-->
+
+</body>
+</html>
