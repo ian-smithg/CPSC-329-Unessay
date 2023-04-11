@@ -87,3 +87,22 @@ hr {
 
 }
 
+.win{
+    background-color: black;
+    color: #00FF00;
+    text-align: center;
+    margin-top: 50%;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.creds{
+    background-color: black;
+    color: #00FF00;
+    text-align: center;
+    margin-top: 0%;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
