@@ -1,7 +1,7 @@
 
 let code1 = 'admin.secure@rode.com';
-let code2 = 'bat';
-let code3 = 'mat';
+let code2 = 'flamingo';
+let code3 = '';
 
 
 var one = false;
